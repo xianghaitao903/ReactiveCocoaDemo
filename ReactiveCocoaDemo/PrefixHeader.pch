@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  ReactiveCocoaDemo
+//
+//  Created by 向海涛 on 15/9/29.
+//  Copyright © 2015年 向海涛. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <ReactiveCocoa/ReactiveCocoa.h>
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
