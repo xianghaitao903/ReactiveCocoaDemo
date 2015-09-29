@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		045A09627C54F594A81127AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F87C3D987F2BCD15450C7 /* libPods.a */; };
+		950331C41BBABFD40029BA8F /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 950331C31BBABFD40029BA8F /* LoginView.m */; settings = {ASSET_TAGS = (); }; };
+		950331C71BBAC3B00029BA8F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950331C61BBAC3B00029BA8F /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95AD15E41BBA883B000D6B7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD15E31BBA883B000D6B7E /* main.m */; };
 		95AD15E71BBA883B000D6B7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD15E61BBA883B000D6B7E /* AppDelegate.m */; };
-		95AD15EA1BBA883B000D6B7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD15E91BBA883B000D6B7E /* ViewController.m */; };
 		95AD15EF1BBA883B000D6B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95AD15EE1BBA883B000D6B7E /* Assets.xcassets */; };
 		95AD15F21BBA883B000D6B7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95AD15F01BBA883B000D6B7E /* LaunchScreen.storyboard */; };
 		95AD15FD1BBA883B000D6B7E /* ReactiveCocoaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD15FC1BBA883B000D6B7E /* ReactiveCocoaDemoTests.m */; };
 		95AD16081BBA883C000D6B7E /* ReactiveCocoaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD16071BBA883C000D6B7E /* ReactiveCocoaDemoUITests.m */; };
+		95AD29EE1BBAB40A00B5D7E1 /* ic_password_focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD29EC1BBAB40A00B5D7E1 /* ic_password_focus.png */; settings = {ASSET_TAGS = (); }; };
+		95AD29EF1BBAB40A00B5D7E1 /* ic_password_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD29ED1BBAB40A00B5D7E1 /* ic_password_normal.png */; settings = {ASSET_TAGS = (); }; };
+		95AD29F21BBAB43700B5D7E1 /* ic_userlogin_focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD29F01BBAB43700B5D7E1 /* ic_userlogin_focus.png */; settings = {ASSET_TAGS = (); }; };
+		95AD29F31BBAB43700B5D7E1 /* ic_userlogin_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD29F11BBAB43700B5D7E1 /* ic_userlogin_normal.png */; settings = {ASSET_TAGS = (); }; };
+		95AD29F51BBAB74E00B5D7E1 /* navHead.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD29F41BBAB74E00B5D7E1 /* navHead.png */; settings = {ASSET_TAGS = (); }; };
+		95AD2A051BBAB9AC00B5D7E1 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD29FC1BBAB9AC00B5D7E1 /* UIColor+Util.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +43,14 @@
 
 /* Begin PBXFileReference section */
 		494F87C3D987F2BCD15450C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		950331C21BBABFD40029BA8F /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		950331C31BBABFD40029BA8F /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		950331C51BBAC3B00029BA8F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		950331C61BBAC3B00029BA8F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		95AD15DF1BBA883B000D6B7E /* ReactiveCocoaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AD15E31BBA883B000D6B7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95AD15E51BBA883B000D6B7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95AD15E61BBA883B000D6B7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		95AD15E81BBA883B000D6B7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		95AD15E91BBA883B000D6B7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		95AD15EE1BBA883B000D6B7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95AD15F11BBA883B000D6B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95AD15F31BBA883B000D6B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +61,13 @@
 		95AD16071BBA883C000D6B7E /* ReactiveCocoaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaDemoUITests.m; sourceTree = "<group>"; };
 		95AD16091BBA883C000D6B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95AD16161BBA8B17000D6B7E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		95AD29EC1BBAB40A00B5D7E1 /* ic_password_focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_password_focus.png; sourceTree = "<group>"; };
+		95AD29ED1BBAB40A00B5D7E1 /* ic_password_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_password_normal.png; sourceTree = "<group>"; };
+		95AD29F01BBAB43700B5D7E1 /* ic_userlogin_focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_userlogin_focus.png; sourceTree = "<group>"; };
+		95AD29F11BBAB43700B5D7E1 /* ic_userlogin_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_userlogin_normal.png; sourceTree = "<group>"; };
+		95AD29F41BBAB74E00B5D7E1 /* navHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navHead.png; sourceTree = "<group>"; };
+		95AD29FB1BBAB9AC00B5D7E1 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		95AD29FC1BBAB9AC00B5D7E1 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
 		B0E7A7C2AB9BF652C9E678DB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DADD019C8D36AC884D512B99 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +107,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		950331C11BBABF960029BA8F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				950331C21BBABFD40029BA8F /* LoginView.h */,
+				950331C31BBABFD40029BA8F /* LoginView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		95AD15D61BBA883B000D6B7E = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +141,10 @@
 		95AD15E11BBA883B000D6B7E /* ReactiveCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				950331C11BBABF960029BA8F /* view */,
 				95AD16151BBA88C1000D6B7E /* controller */,
+				95AD29F61BBAB9AC00B5D7E1 /* Category */,
+				95AD29EB1BBAB38700B5D7E1 /* images */,
 				95AD15E21BBA883B000D6B7E /* Supporting Files */,
 				95AD15E51BBA883B000D6B7E /* AppDelegate.h */,
 				95AD15E61BBA883B000D6B7E /* AppDelegate.m */,
@@ -157,10 +185,31 @@
 		95AD16151BBA88C1000D6B7E /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				95AD15E81BBA883B000D6B7E /* ViewController.h */,
-				95AD15E91BBA883B000D6B7E /* ViewController.m */,
+				950331C51BBAC3B00029BA8F /* LoginViewController.h */,
+				950331C61BBAC3B00029BA8F /* LoginViewController.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		95AD29EB1BBAB38700B5D7E1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				95AD29F41BBAB74E00B5D7E1 /* navHead.png */,
+				95AD29F01BBAB43700B5D7E1 /* ic_userlogin_focus.png */,
+				95AD29F11BBAB43700B5D7E1 /* ic_userlogin_normal.png */,
+				95AD29EC1BBAB40A00B5D7E1 /* ic_password_focus.png */,
+				95AD29ED1BBAB40A00B5D7E1 /* ic_password_normal.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		95AD29F61BBAB9AC00B5D7E1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				95AD29FB1BBAB9AC00B5D7E1 /* UIColor+Util.h */,
+				95AD29FC1BBAB9AC00B5D7E1 /* UIColor+Util.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		ED99EE094925D8451DE444F3 /* Frameworks */ = {
@@ -276,8 +325,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AD29F51BBAB74E00B5D7E1 /* navHead.png in Resources */,
+				95AD29EE1BBAB40A00B5D7E1 /* ic_password_focus.png in Resources */,
+				95AD29F21BBAB43700B5D7E1 /* ic_userlogin_focus.png in Resources */,
 				95AD15F21BBA883B000D6B7E /* LaunchScreen.storyboard in Resources */,
+				95AD29F31BBAB43700B5D7E1 /* ic_userlogin_normal.png in Resources */,
 				95AD15EF1BBA883B000D6B7E /* Assets.xcassets in Resources */,
+				95AD29EF1BBAB40A00B5D7E1 /* ic_password_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +389,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95AD15EA1BBA883B000D6B7E /* ViewController.m in Sources */,
+				95AD2A051BBAB9AC00B5D7E1 /* UIColor+Util.m in Sources */,
+				950331C71BBAC3B00029BA8F /* LoginViewController.m in Sources */,
 				95AD15E71BBA883B000D6B7E /* AppDelegate.m in Sources */,
+				950331C41BBABFD40029BA8F /* LoginView.m in Sources */,
 				95AD15E41BBA883B000D6B7E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,11 +527,13 @@
 			baseConfigurationReference = B0E7A7C2AB9BF652C9E678DB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = ReactiveCocoaDemo/PrefixHeader_pch;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = ReactiveCocoaDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = ReactiveCocoaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xht.ReactiveCocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -484,11 +542,13 @@
 			baseConfigurationReference = DADD019C8D36AC884D512B99 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = ReactiveCocoaDemo/PrefixHeader_pch;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = ReactiveCocoaDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = ReactiveCocoaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xht.ReactiveCocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
