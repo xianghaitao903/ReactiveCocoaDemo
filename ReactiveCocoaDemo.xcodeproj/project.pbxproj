@@ -22,6 +22,7 @@
 		95AD29F31BBAB43700B5D7E1 /* ic_userlogin_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD29F11BBAB43700B5D7E1 /* ic_userlogin_normal.png */; settings = {ASSET_TAGS = (); }; };
 		95AD29F51BBAB74E00B5D7E1 /* navHead.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AD29F41BBAB74E00B5D7E1 /* navHead.png */; settings = {ASSET_TAGS = (); }; };
 		95AD2A051BBAB9AC00B5D7E1 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD29FC1BBAB9AC00B5D7E1 /* UIColor+Util.m */; settings = {ASSET_TAGS = (); }; };
+		95B4ACA01BC609A9009EB117 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4AC9F1BC609A9009EB117 /* LoginService.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		95AD29F41BBAB74E00B5D7E1 /* navHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navHead.png; sourceTree = "<group>"; };
 		95AD29FB1BBAB9AC00B5D7E1 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
 		95AD29FC1BBAB9AC00B5D7E1 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		95B4AC9E1BC609A9009EB117 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		95B4AC9F1BC609A9009EB117 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		B0E7A7C2AB9BF652C9E678DB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DADD019C8D36AC884D512B99 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +144,7 @@
 		95AD15E11BBA883B000D6B7E /* ReactiveCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				95B4AC9D1BC60981009EB117 /* service */,
 				950331C11BBABF960029BA8F /* view */,
 				95AD16151BBA88C1000D6B7E /* controller */,
 				95AD29F61BBAB9AC00B5D7E1 /* Category */,
@@ -210,6 +214,15 @@
 				95AD29FC1BBAB9AC00B5D7E1 /* UIColor+Util.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		95B4AC9D1BC60981009EB117 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				95B4AC9E1BC609A9009EB117 /* LoginService.h */,
+				95B4AC9F1BC609A9009EB117 /* LoginService.m */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		ED99EE094925D8451DE444F3 /* Frameworks */ = {
@@ -390,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AD2A051BBAB9AC00B5D7E1 /* UIColor+Util.m in Sources */,
+				95B4ACA01BC609A9009EB117 /* LoginService.m in Sources */,
 				950331C71BBAC3B00029BA8F /* LoginViewController.m in Sources */,
 				95AD15E71BBA883B000D6B7E /* AppDelegate.m in Sources */,
 				950331C41BBABFD40029BA8F /* LoginView.m in Sources */,

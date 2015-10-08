@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "LoginView.h"
+#import "LoginService.h"
 
 @interface LoginViewController ()
 {
@@ -59,10 +60,27 @@
         NSLog(@"signUpActiveSignal is completed");
     }];
     
-    [[loginView.submitButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        NSLog(@"submitButton is enabled and clicked");
+    [[[loginView.submitButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+     flattenMap:^id(id value) {
+         return [self signInSigal];
+     }]
+     subscribeNext:^(NSNumber *signIn) {
+         BOOL success = [signIn boolValue];
+         if (success) {
+             [self.navigationController pushViewController:[UIViewController new] animated:YES];
+         }
     } completed:^{
-        NSLog(@"submitButtonClickedSignal is completed");
+        NSLog(@"submitButtonClickedSignal is completed ");
+    }];
+}
+
+- (RACSignal *)signInSigal{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [LoginService signInWithUsername:loginView.userNameTextField.text password:loginView.passwordTextField.text complete:^(BOOL sucess) {
+            [subscriber sendNext:@(sucess)];
+            [subscriber sendCompleted];
+        }];
+        return nil;
     }];
 }
 
