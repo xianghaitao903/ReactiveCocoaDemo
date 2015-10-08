@@ -23,6 +23,8 @@
     [super viewDidLoad];
 }
 
+#pragma mark - 初始化
+#pragma mark  初始登录视图
 - (void)addLoginView {
     CGRect mainScreemBrounds = [UIScreen mainScreen].bounds;
     CGFloat viewWidth = mainScreemBrounds.size.width;
@@ -31,6 +33,7 @@
     [self.view addSubview:loginView];
 }
 
+#pragma mark  初始化信号流
 - (void)addSignals {
     RACSignal *validUserNameSignal = [loginView.userNameTextField.rac_textSignal map:^id(NSString *value) {
         return @([self isValidUserName:value]);
@@ -38,7 +41,6 @@
     RAC(loginView.userNameTextField,backgroundColor) = [validUserNameSignal map:^(NSNumber *usernameValid) {
         return [usernameValid boolValue]?[UIColor yellowColor]:[UIColor clearColor];
     }];
-    
     
     RACSignal *validPasswordSignal = [loginView.passwordTextField.rac_textSignal map:^id(NSString *value) {
         return @([self isValidPassword:value]);
@@ -64,11 +66,14 @@
     }];
 }
 
+#pragma mark - 校验
+#pragma mark 用户名校验
 - (BOOL)isValidUserName:(NSString *)userName {
     
     return userName.length > 4;
 }
 
+#pragma mark 密码校验
 - (BOOL)isValidPassword:(NSString *)userName {
     
     return userName.length > 4;
